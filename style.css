@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #5333ed;
+  --secundary-color: #224ac3;
+  --text-gray: #6e7076;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* --- --- --- --- Estilo del Main --- --- --- --- */
+
+main {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 120px 250px 0 250px;
+}
+
+/* --- --- --- --- Seccion Información --- --- --- --- */
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.info h1 {
+  font-size: 70px;
+  align-self: self-start;
+  margin-bottom: 20px;
+  color: var(--secundary-color);
+}
+
+.info p {
+  color: var(--text-gray);
+  line-height: 1.5;
+  font-size: 21px;
+}
+
+/* --- --- --- --- Seccion Ventas --- --- --- --- */
+.ventas {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.ventas i {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 380px;
+  font-size: 20px;
+}
+
+.ventas h1 {
+  display: flex;
+  font-size: 40px;
+  justify-content: center;
+  color: var(--primary-color);
+}
+
+.ventas img {
+  width: 340px;
+  justify-self: center;
+  background-color: rgba(128, 128, 128, 0.25);
+}
+
+/* --- ---- --- --- Estilo de Botones --- --- --- --- */
+
+.ventas .botones {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.botones button {
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+  color: white;
+  background-image: linear-gradient(
+    150deg,
+    var(--primary-color),
+    var(--secundary-color),
+    #00ddff
+  );
+  padding: 12px 5px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+button span {
+  background-color: #111;
+  padding: 8px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+button:hover span {
+  background: none;
+}
+
+button:active {
+  transition: 0.2s;
+  transform: scale(0.9);
+}
+
+/* --- --- --- --- Estilos del cuadro de cuadro-de-disculpas --- --- --- --- */
+
+.no-show {
+  display: none;
+}
+
+.no-i {
+  filter: blur(10px);
+}
+
+
+
+.cuadro-de-disculpas {
+  display: block;
+  background-color: rgba(128, 128, 128, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(5px);
+  width: 100vw;
+  height: 100vh;
+  transition: .3s;
+}
+
+.disculpas {
+  box-sizing: content-box;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: .3s;
+}
+
+.disculpas h1 {
+  font-size: 40px;
+}
+
+.disculpas p {
+  font-size: 28px;
+  font-style: italic;
+}
