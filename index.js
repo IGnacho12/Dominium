@@ -13,3 +13,5 @@ cuadroDeDisculpa.addEventListener("click", () => {
     cuadroDeDisculpa.classList.remove("cuadro-de-disculpas");
     precios.forEach(precio => precio.classList.remove("no-i"));
 });
+
+console.log("hola, esto esta hecho remotamente")
